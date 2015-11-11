@@ -1,0 +1,17 @@
+<html>
+<head>
+</head>
+
+<body>
+{% load staticfiles %}
+<script src="{% static 'js/jquery.js' %}"></script>
+{% if exist == 100 %}
+<script> alert("This account is already existed"); window.location.href="../account/"; </script>
+{% else %}
+<script> window.location.href = "../account/";</script>
+
+{% endif %}
+
+</body>
+
+</html>
